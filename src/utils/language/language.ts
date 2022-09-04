@@ -1,7 +1,7 @@
-import { SupportedLanguages, DEFAULT_LANG } from "../../types/language";
-import locale_en from "../../translations/en.json";
-import locale_es from "../../translations/es.json";
-import locale_fr from "../../translations/fr.json";
+import { SupportedLanguages, DEFAULT_LANG } from "types/language";
+import locale_en from "translations/en.json";
+import locale_es from "translations/es.json";
+import locale_fr from "translations/fr.json";
 
 export const supportedLanguages = {
   en: locale_en,
