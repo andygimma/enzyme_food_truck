@@ -1,4 +1,4 @@
-import React from "react";
+import { FormattedMessage } from "react-intl";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -18,6 +18,18 @@ function App() {
         >
           Learn React
         </a>
+
+        <FormattedMessage
+          id="app.text"
+          defaultMessage="Weclome"
+          description="Welcome text"
+        />
+
+        <FormattedMessage
+          id="app.link"
+          defaultMessage="Go to link"
+          description="Welcome link"
+        />
       </header>
     </div>
   );
