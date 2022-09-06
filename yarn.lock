@@ -1335,6 +1335,16 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/caveat@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/caveat/-/caveat-4.5.8.tgz#02d7969f1be9b5ecdc866b9a4bab15b1260b2db4"
+  integrity sha512-5YURoAwzz5mkvOaFZ8KnYvCA90tupPh6x+PgtAhxUFXYGgrWnRxJMjyM0yKxBWViWCKK9dnbb9URkUHy9YAR7g==
+
+"@fontsource/cormorant-garamond@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/cormorant-garamond/-/cormorant-garamond-4.5.9.tgz#ed8fbfdffc062ec0dc864efafe736c2dad896300"
+  integrity sha512-EumNd3YUmumujsbwTHtrBbwWeWX1c7DKQ2Y4vIqqqvTP36hvriX7qeJ9cD2vsJ2J89Hy8R5Tpe8u+dQpfYJGFA==
+
 "@formatjs/ecma402-abstract@1.12.0":
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/@formatjs/ecma402-abstract/-/ecma402-abstract-1.12.0.tgz#2fb5e8983d5fae2fad9ec6c77aec1803c2b88d8e"

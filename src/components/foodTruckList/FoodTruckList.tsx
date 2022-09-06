@@ -1,23 +1,31 @@
 import styled from "styled-components";
+import { FoodTruck } from "types/foodTruck";
+import FoodTruckListCard from "./FoodTruckListCard";
 
 const Container = styled.div`
-  display: flex;
   width: 100%;
-  height: 100vh;
+`;
+
+const OrderedList = styled.ol`
+  width: 100%;
+  list-style-type: none;
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
 `;
 
 interface FoodTruckListProps {
-  names: string[];
+  trucks: FoodTruck[];
 }
 
 const FoodTruckList = (props: FoodTruckListProps) => {
   return (
     <Container>
-      <ol>
-        {props.names.map((item) => (
-          <li key={item}>{item}</li>
+      <OrderedList>
+        {props.trucks.map((truck) => (
+          <FoodTruckListCard key={truck.objectid} truck={truck} />
         ))}
-      </ol>
+      </OrderedList>
     </Container>
   );
 };

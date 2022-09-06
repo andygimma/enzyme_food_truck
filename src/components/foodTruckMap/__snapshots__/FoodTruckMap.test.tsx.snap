@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bczRLJ lcCeBa"
+  className="sc-bczRLJ ekBFnZ"
 >
   <div
     style={
       Object {
-        "height": "100vh",
-        "width": "100wh",
+        "borderRadius": 12,
+        "height": "80vh",
       }
     }
   />

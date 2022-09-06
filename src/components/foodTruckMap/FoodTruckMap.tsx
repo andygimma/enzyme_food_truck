@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
 `;
 
 const FoodTruckMap = () => {
@@ -13,7 +12,7 @@ const FoodTruckMap = () => {
         center={[40.735863, -73.991083]}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ height: "100vh", width: "100wh" }}
+        style={{ height: "80vh", borderRadius: 12 }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
