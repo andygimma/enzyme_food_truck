@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import { FoodTruck } from "types/foodTruck";
 import { CardFoodItems, FlexContainer, Header2, CardListItem } from "./styles";
 interface FoodTruckListCardProps {
@@ -17,7 +18,10 @@ const FoodTruckListCard = (truck: FoodTruckListCardProps) => {
         <CardFoodItems>{truck.truck.fooditems}</CardFoodItems>
       </FlexContainer>
       <FlexContainer>
-        <p>Location: {truck.truck.address}</p>
+        <p>
+          <FormattedMessage id="app.address" defaultMessage={"Address"} />:{" "}
+          {truck.truck.address}
+        </p>
       </FlexContainer>
     </CardListItem>
   );
