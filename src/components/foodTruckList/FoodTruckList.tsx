@@ -1,18 +1,7 @@
-import styled from "styled-components";
+import { AnimatedList } from "react-animated-list";
 import { FoodTruck } from "types/foodTruck";
 import FoodTruckListCard from "./FoodTruckListCard";
-
-const Container = styled.div`
-  width: 100%;
-`;
-
-const OrderedList = styled.ol`
-  width: 100%;
-  list-style-type: none;
-  li:not(:last-child) {
-    margin-bottom: 8px;
-  }
-`;
+import { Container, OrderedList } from "./styles";
 
 interface FoodTruckListProps {
   trucks: FoodTruck[];
@@ -22,9 +11,11 @@ const FoodTruckList = (props: FoodTruckListProps) => {
   return (
     <Container>
       <OrderedList>
-        {props.trucks.map((truck) => (
-          <FoodTruckListCard key={truck.objectid} truck={truck} />
-        ))}
+        <AnimatedList animation={"grow"}>
+          {props.trucks.map((truck) => (
+            <FoodTruckListCard key={truck.objectid} truck={truck} />
+          ))}
+        </AnimatedList>
       </OrderedList>
     </Container>
   );
