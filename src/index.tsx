@@ -5,6 +5,7 @@ import "index.css";
 import App from "App";
 import reportWebVitals from "reportWebVitals";
 import { setLanguage, supportedLanguages } from "utils/language/language";
+import GlobalStyle from "styles/global";
 
 // SET CURRENT LANGUAGE BASED ON BROWSER LOCALE
 const locale = navigator.language.split(/[-_]/)[0];
@@ -16,6 +17,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
+    <GlobalStyle />
     <IntlProvider
       locale={currentLanguage}
       messages={supportedLanguages[currentLanguage]}
