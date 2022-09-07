@@ -13,9 +13,10 @@ const FoodTruckMap = (props: FoodTruckMapProps) => {
   return (
     <Container>
       <MapContainer
-        center={[52.6376, -1.135171]}
+        center={[40.735863, -73.991083]}
         zoom={12}
         scrollWheelZoom={false}
+        style={{ height: "80vh", borderRadius: 12 }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
