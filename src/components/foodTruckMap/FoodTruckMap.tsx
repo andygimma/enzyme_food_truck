@@ -1,29 +1,40 @@
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import styled from "styled-components";
+import { FoodTruck } from "types/foodTruck";
 
 const Container = styled.div`
   width: 100%;
 `;
+interface FoodTruckMapProps {
+  trucks: FoodTruck[];
+}
 
-const FoodTruckMap = () => {
+const FoodTruckMap = (props: FoodTruckMapProps) => {
   return (
     <Container>
       <MapContainer
-        center={[40.735863, -73.991083]}
-        zoom={13}
+        center={[52.6376, -1.135171]}
+        zoom={12}
         scrollWheelZoom={false}
-        style={{ height: "80vh", borderRadius: 12 }}
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
 
-        <Marker position={[40.735863, -73.991083]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        {props.trucks.map((truck) => {
+          return (
+            <Marker
+              position={[
+                parseFloat(truck.latitude),
+                parseFloat(truck.longitude),
+              ]}
+              key={truck.objectid}
+            >
+              <Popup>{truck.applicant}</Popup>
+            </Marker>
+          );
+        })}
       </MapContainer>
     </Container>
   );

@@ -10,7 +10,7 @@ const SidebarLayout = () => {
         <FoodTruckList trucks={FOOD_TRUCKS} />
       </Sidebar>
       <MainLayout>
-        <FoodTruckMap />
+        <FoodTruckMap trucks={FOOD_TRUCKS} />
       </MainLayout>
     </Container>
   );

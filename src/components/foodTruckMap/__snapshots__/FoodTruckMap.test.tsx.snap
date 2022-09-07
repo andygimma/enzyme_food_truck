@@ -4,13 +4,6 @@ exports[`renders correctly 1`] = `
 <div
   className="sc-bczRLJ ekBFnZ"
 >
-  <div
-    style={
-      Object {
-        "borderRadius": 12,
-        "height": "80vh",
-      }
-    }
-  />
+  <div />
 </div>
 `;
