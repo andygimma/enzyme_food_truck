@@ -6,7 +6,11 @@ import FoodTruckMap from "./FoodTruckMap";
 
 import { FOOD_TRUCKS } from "data/trucks";
 
-it("renders correctly", () => {
-  const tree = renderer.create(<FoodTruckMap trucks={FOOD_TRUCKS} />).toJSON();
-  expect(tree).toMatchSnapshot();
+describe("FoodTruckMap", () => {
+  it("renders correctly", () => {
+    const tree = renderer
+      .create(<FoodTruckMap trucks={FOOD_TRUCKS} />)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

@@ -1,4 +1,5 @@
 import { AnimatedList } from "react-animated-list";
+import { FormattedMessage } from "react-intl";
 import { FoodTruck } from "types/foodTruck";
 import FoodTruckListCard from "./FoodTruckListCard";
 import { Container, OrderedList, Header3, FlexContainer } from "./styles";
@@ -12,7 +13,11 @@ const FoodTruckList = (props: FoodTruckListProps) => {
     <Container>
       <FlexContainer>
         <Header3>
-          {props.trucks.length} Trucks by Distance to Union Square
+          {props.trucks.length}:{" "}
+          <FormattedMessage
+            id="app.list_header"
+            defaultMessage={"Trucks by Distance to Union Square"}
+          />
         </Header3>
       </FlexContainer>
       <OrderedList>

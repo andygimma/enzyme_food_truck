@@ -6,6 +6,7 @@ import { FOOD_TRUCK_API } from "queries/urls";
 import { filterByOpenTrucks } from "queries/transformations";
 
 const SidebarLayout = () => {
+  // NOTE We do not need useEffect because it's handled by useQuery
   const { isLoading, error, data } = useQuery("repoData", () =>
     fetch(FOOD_TRUCK_API).then((res) => res.json())
   );

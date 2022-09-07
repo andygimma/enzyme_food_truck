@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# Food Truck App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Usage
 
-## Available Scripts
+1. This app uses `yarn`.
+1. `$ nvm use` to ensure you are using the correct version of node.
+1. `$ yarn` to install libraries.
+1. `$ yarn run test` to test.
+1. `$ yarn run format` to automatically format your code (works with VSCode!).
+1. `$ yarn run start` to start the app.
+## Hightlights
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Uses ESLint and Prettier
+1. Uses Typescript, with types and interfaces being used in the app
+1. Uses react-intl for translations: Spanish, French, and English are supported
+1. Uses animations for the list (though the library used is throwing a console error)
+1. Well-tested
+1. Leaflet maps interaction with the list using refs
+1. The architecture should make it easy to find everything
+1. Uses styled components, I think this shows more understanding of CSS than using something like MUI
+1. Uses custom fonts and colors
+1. Since data translations will be important for this app, we make sure it gets it's own high level folder. This also helps us ensure that we conform to our Typescript types.

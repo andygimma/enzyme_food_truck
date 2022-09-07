@@ -1,4 +1,5 @@
 {
     "app.company_name": "Food Truck",
-    "app.address": "Adresse"
+    "app.address": "Adresse",
+    "app.list_header": "Camions par distance jusqu'à Union Square"
 }
