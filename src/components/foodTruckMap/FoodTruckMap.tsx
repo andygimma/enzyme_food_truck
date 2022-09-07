@@ -13,17 +13,17 @@ const FoodTruckMap = (props: FoodTruckMapProps) => {
   return (
     <Container>
       <MapContainer
-        center={[40.735863, -73.991083]}
+        center={[37.773972, -122.431297]}
         zoom={12}
         scrollWheelZoom={false}
-        style={{ height: "80vh", borderRadius: 12 }}
+        style={{ height: "88vh", borderRadius: 12 }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
 
-        {props.trucks.map((truck) => {
+        {props.trucks.map((truck, index) => {
           return (
             <Marker
               position={[

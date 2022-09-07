@@ -1,7 +1,7 @@
 import { AnimatedList } from "react-animated-list";
 import { FoodTruck } from "types/foodTruck";
 import FoodTruckListCard from "./FoodTruckListCard";
-import { Container, OrderedList } from "./styles";
+import { Container, OrderedList, Header3, FlexContainer } from "./styles";
 
 interface FoodTruckListProps {
   trucks: FoodTruck[];
@@ -10,6 +10,11 @@ interface FoodTruckListProps {
 const FoodTruckList = (props: FoodTruckListProps) => {
   return (
     <Container>
+      <FlexContainer>
+        <Header3>
+          {props.trucks.length} Trucks by Distance to Union Square
+        </Header3>
+      </FlexContainer>
       <OrderedList>
         <AnimatedList animation={"grow"}>
           {props.trucks.map((truck) => (

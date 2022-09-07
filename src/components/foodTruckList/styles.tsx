@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  height: 88vh;
+  overflow-y: scroll;
+  border-radius: 12px;
 `;
 export const OrderedList = styled.ol`
   width: 100%;
@@ -41,4 +44,9 @@ export const CardFoodItems = styled.p`
 
 export const Header2 = styled.h2`
   text-transform: uppercase;
+`;
+
+export const Header3 = styled.h3`
+  font-size: 42px;
+  font-family: "Caveat";
 `;

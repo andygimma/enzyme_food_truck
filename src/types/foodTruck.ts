@@ -5,4 +5,5 @@ export type FoodTruck = {
   latitude: string;
   longitude: string;
   objectid: string;
+  status?: string;
 };
