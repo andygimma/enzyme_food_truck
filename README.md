@@ -20,3 +20,38 @@
 1. Uses styled components, I think this shows more understanding of CSS than using something like MUI
 1. Uses custom fonts and colors
 1. Since data translations will be important for this app, we make sure it gets it's own high level folder. This also helps us ensure that we conform to our Typescript types.
+
+## Location Distance
+
+src/queries/transformations.ts
+
+Here I utilized the Haversine formula to get the distance between two points on a map.
+
+There are two important custom functions. One to get the closest location, and one to order the array by distance.
+
+## Next steps
+
+Had I more time I would have made these improvements.
+
+### Frontend
+
+1. Make sure that to food truck list isn't mutated inappropriately.
+1. Improve the colors! I love working with designers, and I love making my apps look beautiful. However, I should not choose color schemes ;)
+1. The list and the map don't interact. I was having some trouble with refs, leaflet, and typescript, so I thought I'd just move on.
+
+### Backend
+
+I ran out of time, but my original plan was to finish this by making an elixir backend with
+* Postgis
+* Cachex
+
+Then we would only need to hit the third party API once a day (presumably this data is updated at most once a day).
+We could save only the important info in our database, perhaps from our FoodTruck type.
+Postgis could have handled ordering by distance almost intsantly on the backend.
+We could have passed that info to Cachex, and had incredible speed for our API.
+
+Oh well, it's Friday and I know you want this in. If you'd like, I would be happy to make the API too :)
+
+## Thank you!
+
+Thank you for your time and patience. I'm looking forward to hearing back!
