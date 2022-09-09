@@ -1,3 +1,5 @@
+import { CENTROID } from "data/map";
+import { orderByDistance } from "queries/transformations";
 import { AnimatedList } from "react-animated-list";
 import { FormattedMessage } from "react-intl";
 import { FoodTruck } from "types/foodTruck";
@@ -9,6 +11,10 @@ interface FoodTruckListProps {
 }
 
 const FoodTruckList = (props: FoodTruckListProps) => {
+  const trucksOrderedByDistance: FoodTruck[] = orderByDistance(
+    CENTROID,
+    props.trucks
+  );
   return (
     <Container>
       <FlexContainer>
@@ -22,7 +28,7 @@ const FoodTruckList = (props: FoodTruckListProps) => {
       </FlexContainer>
       <OrderedList>
         <AnimatedList animation={"grow"}>
-          {props.trucks.map((truck) => (
+          {trucksOrderedByDistance.map((truck) => (
             <FoodTruckListCard key={truck.objectid} truck={truck} />
           ))}
         </AnimatedList>

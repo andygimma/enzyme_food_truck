@@ -1,3 +1,4 @@
+import { CENTROID } from "data/map";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import styled from "styled-components";
 import { FoodTruck } from "types/foodTruck";
@@ -13,7 +14,7 @@ const FoodTruckMap = (props: FoodTruckMapProps) => {
   return (
     <Container>
       <MapContainer
-        center={[37.773972, -122.431297]}
+        center={[CENTROID.latitude, CENTROID.longitude]}
         zoom={12}
         scrollWheelZoom={false}
         style={{ height: "88vh", borderRadius: 12 }}

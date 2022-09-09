@@ -55,8 +55,8 @@ export const LOCATION_TEST_1 = [
     longitude: "0.0",
     objectid: "3",
     status: "3",
-  }
-]
+  },
+];
 
 export const LOCATION_TEST_2 = [
   {
