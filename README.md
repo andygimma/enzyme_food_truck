@@ -8,7 +8,7 @@
 1. `$ yarn run test` to test.
 1. `$ yarn run format` to automatically format your code (works with VSCode!).
 1. `$ yarn run start` to start the app.
-## Hightlights
+## Highlights
 
 1. Uses ESLint and Prettier
 1. Uses Typescript, with types and interfaces being used in the app
